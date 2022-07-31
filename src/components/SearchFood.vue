@@ -5,7 +5,7 @@ import MostrarResultados from './MostrarResultados.vue';
 <template>
   <div class="container">
     <label for="">Buscar Alimento</label>
-    <input type="search" v-model="alimento" @keyup.enter="buscardorAlimentos" />
+    <!-- <input type="search" v-model.trim="alimento" @keyup.enter="buscardorAlimentos" placeholder="Escribe el nombre del alimento" /> -->
     <button @click="buscardorAlimentos">Buscar Alimento</button>
   </div>
   <div v-if="resultadoAlimentos.length !== 0">
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      alimento: '',
+      alimento: 'Tamarindo',
       listadoAlimentos: [],
       resultadoAlimentos: [],
     };
@@ -39,7 +39,7 @@ export default {
       }
       this.listadoAlimentos.map((value) => {
         const foodName = value.Alimento.toLowerCase();
-        if (foodName.match(`(${this.alimento.toLowerCase().trim()})`) && this.alimento.trim() !== '') {
+        if (foodName.match(`(${this.alimento.toLowerCase().trim()})`) && this.alimento !== '') {
           this.resultadoAlimentos.push(value);
         }
       });
