@@ -2,7 +2,7 @@
   <h1>Coincidencias de alimentos</h1>
 
   <div class="container">
-    <div class="caja" v-for="(item, index) in alimento" :key="index">
+    <div class="caja" v-for="(item, index) in coincidenciaAlimento" :key="index">
       <div class="caja titulo">
         <p>{{ item.Alimento }} [{{ item.EnergíaKcal }}kcal]</p>
         <p>Grupo de {{ item.Categoría }}</p>
@@ -30,7 +30,7 @@
 <script>
 export default {
   props: {
-    alimento: {
+    coincidenciaAlimento: {
       type: Array,
       default: () => {},
     },

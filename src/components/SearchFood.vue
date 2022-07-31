@@ -9,7 +9,7 @@ import MostrarResultados from './MostrarResultados.vue';
     <button @click="buscardorAlimentos">Buscar Alimento</button>
   </div>
   <div v-if="resultadoAlimentos.length !== 0">
-    <MostrarResultados :alimento="resultadoAlimentos" />
+    <MostrarResultados :coincidenciaAlimento="resultadoAlimentos" />
   </div>
 </template>
 
