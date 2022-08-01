@@ -6,10 +6,6 @@ import SearchFood from './components/SearchFood.vue';
 <template>
   <Title titulo="Buscador de Alimentos SMAE" />
   <SearchFood />
-
-  <footer>
-    <h4 class="text-xl">Xenia Padilla, &copy;2022</h4>
-  </footer>
 </template>
 
 <script>
@@ -24,21 +20,13 @@ export default {
 
 <style>
 body {
-  box-sizing: border-box;
-  background-color: #00132d;
+  background-color: #39c2e4;
+  color: #ffffff;
 }
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
-  margin-top: 60px;
-}
-
-footer {
-  padding: 3rem;
-  margin-top: 20px;
-  width: 100%;
-}
+} */
 </style>

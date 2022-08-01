@@ -1,7 +1,8 @@
 <template>
-  <h1 class="text-3xl m-1">{{ titulo }}</h1>
-  <h5>@xenianutrition</h5>
-  <hr />
+  <div>
+    <h1 class="text-3xl m-1">{{ titulo }}</h1>
+    <h5>@xenianutrition</h5>
+  </div>
 </template>
 
 <script>
@@ -16,7 +17,17 @@ export default {
 </script>
 
 <style scoped>
-hr {
-  margin: 0 10%;
+div {
+  background: #c2e439;
+  padding: 20px 0;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+h1,
+h5 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 </style>
